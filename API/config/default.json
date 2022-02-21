@@ -1,0 +1,34 @@
+{
+    "bcrypt": {
+        "BCRYPT_SECRET": "bcrypt_secret",
+        "SALT_ROUNDS": 10
+    },
+    "db": {
+        "URI": "mongodb://localhost:27017/croma",
+        "options": {
+            "autoIndex": true,
+            "useCreateIndex": true,
+            "useNewUrlParser": true,
+            "useUnifiedTopology": true
+        }
+    },
+    "jwt": {
+        "SECRET_KEY": "secret_key"
+    },
+    "password": "12345678",
+    "role": {
+        "ADMIN": 1,
+        "DEAN": 2,
+        "DOCTOR": 3,
+        "NURSE": 4,
+        "COORDINATOR": 5,
+        "PATIENT": 6
+    },
+    "port": 5000,
+    "clientSide": "http://localhost:3000",
+    "redis_port": 6379,
+    "redis_option": {
+        "EX": 300,
+        "NX": true
+    }
+}
